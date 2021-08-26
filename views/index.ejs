@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul style="border:double;">
+        <% todos.forEach(function(user){ %>
+        <div style="border: inset;">
+            <li><%= user.nombre %></li>
+            <li><%= user.profesion %></li>
+            <li><%= user.nivel %></li>
+            <li><%= user.estatus %></li>
+            <li><%= user.residencia %></li>
+            <li><%= user.lastlogin %></li>
+        </div>
+        <% }); %>
+    </ul>
+
+</body>
+</html>
